@@ -86,6 +86,9 @@ for n=1:10000
   
 end
 
+figure;
+histogram(x0f,100);
+figure;
 err = x0s-x0f;
 plot(err);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
