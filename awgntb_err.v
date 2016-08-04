@@ -64,6 +64,7 @@ always @(posedge clk or negedge rst)begin
 	end
 end
 
+//xor_ss is the comparison result. If it is 0, the two sample match each other
 always @(posedge clk) begin
     if (n>=13) begin
 	xor_ss<= awgn_out ^ soft[n-13];
